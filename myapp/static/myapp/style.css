@@ -1,0 +1,39 @@
+body
+{
+    background-color: #F2F2F2;
+}
+h1
+{
+    color: #E86681;
+}
+#logo
+{
+    color: #0084E6;
+    margin: 10px;
+}
+#welcome
+{
+    text-align: center;
+    margin-top: 70px;
+}
+#task
+{
+    margin: 50px 550px 0 550px;
+    padding: 20px;
+    border: 2px solid #E86681;
+    border-radius: 10px;
+}
+#add
+{
+    background-color: #E86681;
+    color: black;
+    border: none;
+}
+#register
+{
+    margin-left: 90%;
+}
+#register-text
+{
+    margin-left: 88.5%;
+}

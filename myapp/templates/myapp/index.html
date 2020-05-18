@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- my style -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+
+    <title>TODO - welcome</title>
+  </head>
+  <body>
+      
+        <div id="logo">
+          <h2>TODOapp</h2>
+          <button id="register" class="btn btn-primary">Register</button> <p id="register-text">to save your work</p> 
+        </div>
+        
+        <div id="welcome">
+          <h1>Welcome!</h1>
+          <h3>Start by typing your tasks<br> of the day or <a href="">Sign in</a>.</h3>
+        </div>
+        <div id="task">
+          <form action="" method="post">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text"  placeholder="Describe your task" class="form-control" name= "tasktext">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input class="form-control" placeholder="Date and time" type="datetime-local"  id="example-datetime-local-input">              
+              </div>
+            </div>
+              <button id="add" class=" form-control">ADD</button>
+
+          </form> 
+        </div>
+        <div id="task">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <h4>Task description</h4>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <h5>Date-time</h5>
+              </div>
+            </div>
+        </div>
+        <div id="task">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <h4>Task description</h4>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <h5>Date-time</h5>
+            </div>
+          </div>
+      </div>
+      <div id="task">
+        <div class="form-group">
+          <div class="col-sm-12">
+            <h4>Task description</h4>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <h5>Date-time</h5>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
