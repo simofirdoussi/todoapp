@@ -1,6 +1,6 @@
 body
 {
-    background-color: #F2F2F2;
+    background-color: #E6E6E6;
 }
 h1
 {
@@ -16,24 +16,16 @@ h1
     text-align: center;
     margin-top: 70px;
 }
-#task
-{
-    margin: 50px 550px 0 550px;
-    padding: 20px;
-    border: 2px solid #E86681;
-    border-radius: 10px;
-}
 #add
 {
     background-color: #E86681;
     color: black;
     border: none;
 }
-#register
+#login
 {
-    margin-left: 90%;
-}
-#register-text
-{
-    margin-left: 88.5%;
+    margin: 80px 550px 0 550px;
+    padding: 20px;
+    border: 2px solid #E86681;
+    border-radius: 10px;
 }
