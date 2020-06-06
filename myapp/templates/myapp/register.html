@@ -1,0 +1,7 @@
+
+<form method="post">
+{%csrf_token%}
+{{form.as_p}}
+<strong style="color: red;">{{error}}</strong><br>
+<button type="submit">submit</button>
+</form>
