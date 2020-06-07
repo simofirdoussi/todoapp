@@ -17,22 +17,23 @@
   <body>
     <div id="logo">
       <h2>hello {{request.user}}</h2>
-      <a href="{% url 'logoutPage' %}" >Log out</a>
+      <a href="{% url 'logoutPage' %}" class="btn btn-primary">Log out</a>
     </div>
     
         <div id="task">
-          <form action="" method="post">
+          <form action="{% url 'home' %}" method="POST">
+            {% csrf_token %}
             <div class="form-group">
               <div class="col-sm-12">
-                <input type="text"  placeholder="Describe your task" class="form-control" name= "tasktext">
+                {{form.description}}
               </div>
             </div>
             <div class="form-group">
               <div class="col-sm-12">
-                <input class="form-control" placeholder="Date and time" type="datetime-local">              
+                {{form.date}}       
               </div>
             </div>
-              <button id="add" class=" form-control">ADD</button>
+              <input id="add" type="submit" class=" form-control" value="ADD">
           </form> 
         </div>
         {% for task in tasks %}
@@ -46,6 +47,7 @@
             <div class="form-group">
               <div class="col-sm-12">
                 <h5>{{task.date}}</h5>
+                <h6>{{usr}}</h6>
               </div>
             </div>
         </div>

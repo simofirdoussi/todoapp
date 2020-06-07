@@ -5,6 +5,7 @@ from django.contrib.auth import logout, login, authenticate
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Task
+from .forms import TaskForm
 
 
 def index(request):
@@ -39,7 +40,16 @@ def logoutpage(request):
 
 @login_required
 def home(request):
+    form = TaskForm()
+    if request.method == 'POST':
+        form = TaskForm(request.POST)
+        if form.is_valid():
+            fs = form.save(commit=False)
+            fs.user= request.user
+            fs.save()
+        return redirect('home')
     context = {
         'tasks': Task.objects.all(),
+        'form' : form,
     }
     return render(request, "myapp/home.html", context)
