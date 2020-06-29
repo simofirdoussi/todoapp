@@ -1,3 +1,3 @@
 # todoapp
 Basic TODO application to introduce you to Django.
-Tutorial here life-algorithm.com/post/3
+Tutorial here https://www.life-algorithm.com/post/1/
